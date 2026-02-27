@@ -8,7 +8,7 @@ from typing import Dict, Tuple, Optional, List
 # ----------------------------
 # Hard-set project paths
 # ----------------------------
-BASE_DIR = Path("~/Desktop/ArabicAgreementSync").expanduser()
+BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = BASE_DIR / "data"
 
 CONLLU_IN = DATA_DIR / "e100.conllu"
